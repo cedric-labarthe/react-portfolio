@@ -1,0 +1,55 @@
+.contacts-container {
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2%;
+}
+
+.contacts-title {
+  font-size: 5rem;
+  text-decoration: underline;
+}
+
+.contacts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.social {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -10%;
+  background: white;
+  width: 120%;
+  height: 100%;
+}
+
+.social:hover .bg {
+  background: black;
+  color: red;
+}
+
+.contacts-content a {
+  text-align: center;
+  color: black;
+  margin: 2% 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.contacts-content svg {
+  height: 100%;
+}

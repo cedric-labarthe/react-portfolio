@@ -1,0 +1,73 @@
+.skills-container {
+  color: rgb(250, 225, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  padding: 0 2%;
+}
+
+.skills-title {
+  font-size: 5rem;
+  color: grey;
+  text-decoration: underline;
+}
+
+.skills-content {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  margin: 1% 2%;
+}
+.skill-container p {
+  user-select: none;
+  padding: 10px;
+  border-radius: 0;
+  width: 80%;
+  background-color: gray;
+  transform: scale(1);
+  transition: all linear 210ms 20ms;
+}
+.skill-container:hover p {
+  color: grey;
+  background-color: rgb(250, 225, 175);
+  transform: scale(1.1);
+}
+.skill-badge {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: rgb(250, 225, 175);
+  background-color: gray;
+  border-radius: 50%;
+  transition: all linear 200ms;
+}
+.skill-container:hover .skill-badge {
+  fill: grey;
+  background-color: rgb(250, 225, 175);
+  border-radius: 0;
+}
+
+.skill-badge svg {
+  width: 50%;
+  height: auto;
+  transform: scale(1);
+  transition: all linear 150ms;
+}
+.skill-container:hover svg {
+  transform: scale(1.2);
+}

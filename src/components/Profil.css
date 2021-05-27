@@ -1,0 +1,23 @@
+.profil-container {
+  color: rgb(250, 225, 175);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: black;
+  height: 100vh;
+  padding: 0 2%;
+}
+
+.profil-title {
+  color: rgb(250, 225, 175);
+}
+
+.profil-content {
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: white;
+}
