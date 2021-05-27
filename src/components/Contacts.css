@@ -27,21 +27,6 @@
   flex-direction: column;
 }
 
-.bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: -10%;
-  background: white;
-  width: 120%;
-  height: 100%;
-}
-
-.social:hover .bg {
-  background: black;
-  color: red;
-}
-
 .contacts-content a {
   text-align: center;
   color: black;
