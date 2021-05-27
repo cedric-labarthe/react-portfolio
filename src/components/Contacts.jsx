@@ -13,7 +13,7 @@ const Contacts = () => (
       <div className="contacts-content">
         <a
           className="social"
-          href="http://"
+          href="https://github.com/cedric-labarthe"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -31,7 +31,7 @@ const Contacts = () => (
         </a>
         <a
           className="social"
-          href="http://"
+          href="http://www.linkedin.com/in/cedric-la-barthe"
           target="_blank"
           rel="noopener noreferrer"
         >
