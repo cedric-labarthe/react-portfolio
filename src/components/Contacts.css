@@ -37,4 +37,10 @@
 
 .contacts-content svg {
   height: 100%;
+  transition: all linear 270ms;
+}
+.contacts-content svg:hover {
+  stroke-width: 2px;
+  stroke: black;
+  fill: none;
 }
