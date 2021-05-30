@@ -3,3 +3,8 @@
   width: 100%;
   background-color: aliceblue;
 }
+
+.navbar-container-disable {
+  opacity: 0;
+  transition: all linear 320ms;
+}
