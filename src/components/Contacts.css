@@ -15,10 +15,9 @@
 
 .contacts-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 60%;
 }
 
 .social {
@@ -43,4 +42,20 @@
   stroke-width: 2px;
   stroke: black;
   fill: none;
+}
+
+@media screen and (max-width: 520px) {
+  .contacts-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts-title {
+    font-size: 2rem;
+  }
+  .contacts-content {
+    flex-direction: column;
+  }
+  .social {
+    height: 20vh;
+  }
 }

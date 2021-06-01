@@ -12,7 +12,7 @@ import sept from '../assets/images/game/sept.png';
 import './Projects.css';
 
 const Projects = () => (
-  <section className="projects-container">
+  <section className="projects-container" id="projects">
     <Fade right>
       <h2 className="projects-title">Projets</h2>
     </Fade>

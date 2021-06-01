@@ -1,10 +1,56 @@
-.navbar-container {
+.navbar-container,
+.navbar-container-hidden {
+  font-family: -apple-system, BlinkMacSystemFont, 'Josefin Sans', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   position: fixed;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  background-color: aliceblue;
+  padding: 10px 0;
 }
 
-.navbar-container-disable {
+.navbar-container {
+  font-size: 2em;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0px 2px 20px black;
+  transition: all linear 300ms;
+}
+
+.navbar-container-hidden {
   opacity: 0;
-  transition: all linear 320ms;
+  z-index: -10;
+  transition: all linear 300ms;
+}
+
+.navbar-container a,
+.navbar-container-hidden a {
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all linear 100ms;
+}
+
+.navbar-container a:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.02);
+  text-decoration: none;
+  text-shadow: 0 0 2px gray;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-container {
+    font-size: 0.8em;
+  }
+  .navbar-container a,
+  .navbar-container-hidden a {
+    width: 20%;
+  }
 }

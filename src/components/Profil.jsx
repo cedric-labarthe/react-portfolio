@@ -12,7 +12,7 @@ import './Profil.css';
 const Profil = () => {
   const date = new Date();
   return (
-    <section className="profil-container">
+    <section className="profil-container" id="profil">
       <Header />
       <Fade left>
         <div className="profil-content">

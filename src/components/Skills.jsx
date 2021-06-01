@@ -1,15 +1,15 @@
 // Import modules
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-reveal';
 
 // Import styles
 import './Skills.css';
 
 const Skills = () => (
-  <section className="skills-container">
-    <Fade left oppposite>
+  <section className="skills-container" id="skills">
+    <Fade left>
       <h2 className="skills-title">Competences</h2>
     </Fade>
-    <Fade>
+    <Fade cascade>
       <div className="skills-content">
         <div className="skill-container">
           <div className="skill-badge">
