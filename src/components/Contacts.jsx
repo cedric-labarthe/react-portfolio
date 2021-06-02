@@ -5,9 +5,16 @@ import { Fade } from 'react-reveal';
 import './Contacts.css';
 
 const Contacts = () => (
-  <section className="contacts-container" id="contacts">
+  <section
+    className="contacts-container"
+    id="contacts"
+    style={{
+      backgroundImage: 'url(/white-bg.jpg)',
+      backgroundSize: 'cover',
+    }}
+  >
     <Fade left>
-      <h2 className="contacts-title">Contacts</h2>
+      <h2 className="contacts-title">Contact</h2>
     </Fade>
     <Fade>
       <div className="contacts-content">

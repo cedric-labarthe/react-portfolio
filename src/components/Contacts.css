@@ -24,6 +24,8 @@
   height: 30vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-content a {
@@ -35,7 +37,8 @@
 }
 
 .contacts-content svg {
-  height: 100%;
+  height: 7vw;
+  width: 7vw;
   transition: all linear 270ms;
 }
 .contacts-content svg:hover {

@@ -4,10 +4,19 @@ import { Fade } from 'react-reveal';
 // Import styles
 import './Skills.css';
 
+// TODO Add Sass SCRUM?
+
 const Skills = () => (
-  <section className="skills-container" id="skills">
+  <section
+    className="skills-container"
+    id="skills"
+    style={{
+      backgroundImage: 'url(/white-bg.jpg)',
+      backgroundSize: 'cover',
+    }}
+  >
     <Fade left>
-      <h2 className="skills-title">Competences</h2>
+      <h2 className="skills-title">Compétences</h2>
     </Fade>
     <Fade cascade>
       <div className="skills-content">

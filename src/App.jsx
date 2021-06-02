@@ -1,5 +1,5 @@
 // Import modules
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 
 // Import styles
 import './App.css';
@@ -12,17 +12,16 @@ import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Intro from './components/Into';
 import DotRing from './components/DotRing';
-import { MouseContext } from './context/mouse-context';
 
 function App() {
   const [intro, setIntro] = useState(true);
   const [scrollTop, setScrollTop] = useState(true);
   let prevPos = 0;
-
-  const { cursorChangeHandler } = useContext(MouseContext);
+  const [scrollPos, setScrollPos] = useState(0);
 
   const handleScroll = () => {
     const topPos = window.pageYOffset || document.documentElement.scrollTop;
+    setScrollPos(document.documentElement.scrollTop);
     console.log(topPos);
     if (prevPos < topPos && topPos !== 0) {
       setScrollTop(false);
@@ -38,19 +37,14 @@ function App() {
 
   return (
     <div className="App">
-      <DotRing />
-      <div
-        onMouseEnter={() => cursorChangeHandler('hovered')}
-        onMouseLeave={() => cursorChangeHandler('')}
-      />
-
       {intro ? <Intro setIntro={setIntro} /> : null}
       <Navbar scrollTop={scrollTop} />
       {!intro ? (
         <>
-          <Profil />
+          <DotRing />
+          <Profil scrollPos={scrollPos} />
           <Skills />
-          <Projects />
+          <Projects scrollPos={scrollPos} />
           <Contacts />
         </>
       ) : null}

@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import './DotRing.css';
-import { MouseContext } from '../context/mouse-context';
 
 const DotRing = () => {
   function useMousePosition() {
@@ -21,18 +20,11 @@ const DotRing = () => {
     return mousePosition;
   }
 
-  const { cursorType } = useContext(MouseContext);
   const { x, y } = useMousePosition();
   return (
     <>
-      <div
-        style={{ left: `${x}px`, top: `${y}px` }}
-        className={`ring ${cursorType}`}
-      />
-      <div
-        className={`dot ${cursorType}`}
-        style={{ left: `${x}px`, top: `${y}px` }}
-      />
+      <div style={{ left: `${x}px`, top: `${y}px` }} className="ring" />
+      <div className="dot" style={{ left: `${x}px`, top: `${y}px` }} />
     </>
   );
 };

@@ -19,10 +19,10 @@ const Intro = ({ setIntro }) => {
     setTimeout(() => {
       divRight.style.transform = 'translateX(150%)';
       divLeft.style.transform = 'translateX(-150%)';
-    }, 3200);
+    }, 1800);
     setTimeout(() => {
       setIntro(false);
-    }, 5000);
+    }, 3200);
   }, []);
 
   return (

@@ -1,14 +1,20 @@
 // Import modules
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { MemoryRouter as Router } from 'react-router-dom';
 
 // Import styles
 import './Navbar.css';
 
 const Navbar = ({ scrollTop }) => (
-  <div className={scrollTop ? 'navbar-container' : 'navbar-container-hidden'}>
-    <Router>
+  <div
+    className={scrollTop ? 'navbar-container' : 'navbar-container-hidden'}
+    style={{
+      backgroundImage: 'url(/nav-bg.jpg)',
+      backgroundSize: 'cover',
+    }}
+  >
+    <Router history="/">
       <HashLink smooth to="/pathLink#profil">
         Profil
       </HashLink>
@@ -19,7 +25,7 @@ const Navbar = ({ scrollTop }) => (
         Projets
       </HashLink>
       <HashLink smooth to="/pathLink#contacts">
-        Contacts
+        Contact
       </HashLink>
     </Router>
   </div>
