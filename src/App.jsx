@@ -10,11 +10,8 @@ import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
-import Intro from './components/Into';
-// import DotRing from './components/DotRing';
 
 function App() {
-  const [intro, setIntro] = useState(false);
   const [scrollTop, setScrollTop] = useState(true);
   let prevPos = 0;
   const [scrollPos, setScrollPos] = useState(0);
@@ -38,17 +35,11 @@ function App() {
 
   return (
     <div className="App">
-      {intro ? <Intro setIntro={setIntro} /> : null}
       <Navbar scrollTop={scrollTop} />
-      {!intro ? (
-        <>
-          {/* <DotRing /> */}
-          <Profil scrollPos={scrollPos} />
-          <Skills />
-          <Projects />
-          <Contacts />
-        </>
-      ) : null}
+      <Profil scrollPos={scrollPos} />
+      <Skills />
+      <Projects />
+      <Contacts />
     </div>
   );
 }
