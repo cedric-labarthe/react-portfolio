@@ -19,7 +19,6 @@ function App() {
   const handleScroll = () => {
     const topPos = window.pageYOffset || document.documentElement.scrollTop;
     setScrollPos(document.documentElement.scrollTop);
-    console.log(topPos);
     if (prevPos < topPos && topPos !== 0) {
       setScrollTop(false);
     } else {

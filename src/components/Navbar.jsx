@@ -13,7 +13,7 @@ const Navbar = ({ scrollTop }) => (
         Profil
       </HashLink>
       <HashLink smooth to="/pathLink#skills">
-        Skills
+        Compétences
       </HashLink>
       <HashLink smooth to="/pathLink#projects">
         Projets

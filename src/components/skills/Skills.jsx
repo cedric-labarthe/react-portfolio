@@ -18,7 +18,7 @@ const Skills = () => (
     <Fade cascade>
       <div className="skills-content">
         {svgList.map((skill) => (
-          <SkillCard name={skill.name} svg={skill.svg} />
+          <SkillCard key={skill.name} name={skill.name} svg={skill.svg} />
         ))}
       </div>
     </Fade>

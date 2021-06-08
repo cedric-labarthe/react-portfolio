@@ -15,7 +15,6 @@ import './Profil.css';
 
 const Profil = ({ scrollPos }) => {
   const date = new Date();
-
   return (
     <section
       className="profil-container"

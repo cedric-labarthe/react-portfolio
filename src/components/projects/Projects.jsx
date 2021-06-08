@@ -24,7 +24,8 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>Space Hackathon</h2>
-            <p>Hackathon de 24 autour du theme de l&apos;espace</p>
+            <p>Hackathon de 24 autour du thème de l&apos;espace</p>
+            <p>React - p5.js</p>
             <a
               href="https://github.com/cedric-labarthe/space-hackathon.git"
               target="_blank"
@@ -54,6 +55,7 @@ const Projects = () => (
               Une application de gestion de trajets en vélos en libre service.
               (projet fictif)
             </p>
+            <p>React - Leaflet - FireBase - Tailwind</p>
             <a
               href="https://github.com/cedric-labarthe/Bicloo-App.git"
               target="_blank"
@@ -80,6 +82,7 @@ const Projects = () => (
           <div className="info">
             <h2>4-Spirited-Guys</h2>
             <p>Site vitrine d&apos;un lieux de détente (projet fictif)</p>
+            <p>HTML - Sass - JS</p>
             <a
               href="https://github.com/cedric-labarthe/4-spirited-guys.git"
               target="_blank"
@@ -105,7 +108,8 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>BlackJack</h2>
-            <p>Jeu de BlackJack en HTML/CSS/JS</p>
+            <p>Jeu de BlackJack</p>
+            <p>HTML - CSS - JS</p>
             <a
               href="https://github.com/cedric-labarthe/blackjack.git"
               target="_blank"
@@ -131,7 +135,8 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>Sept</h2>
-            <p>Jeu de hasard en React</p>
+            <p>Jeu de hasard</p>
+            <p>React</p>
             <a
               href="https://github.com/cedric-labarthe/sept.git"
               target="_blank"
@@ -158,6 +163,7 @@ const Projects = () => (
           <div className="info">
             <h2>Portfolio</h2>
             <p>Projet d&apos;un autre portfolio</p>
+            <p>HTML / Sass / JS</p>
             <a
               href="https://cedric-labarthe.github.io/portfolio/"
               target="_blank"

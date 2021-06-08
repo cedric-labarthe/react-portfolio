@@ -12,7 +12,7 @@ const SkillCard = ({ name, svg }) => (
 
 SkillCard.propTypes = {
   name: PropTypes.string.isRequired,
-  svg: PropTypes.objectOf(PropTypes.element).isRequired,
+  svg: PropTypes.element.isRequired,
 };
 
 export default SkillCard;
