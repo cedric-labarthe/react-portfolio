@@ -73,11 +73,17 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1200px) {
   .skills-container {
     flex-direction: column;
     justify-content: center;
   }
+  .skills-content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 820px) {
   .skills-content {
     width: 100%;
   }

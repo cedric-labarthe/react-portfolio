@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  min-height: 100vh;
-  padding: 50px 20px 0 20px;
+  min-height: 110vh;
+  padding: 50px 50px 0 50px;
 }
 
 .profil-container-opacity {
@@ -32,6 +32,7 @@
   .profil-container {
     padding-top: 10vh;
     mix-blend-mode: unset;
+    padding: 50px 40px 0 40px;
   }
   .profil-content {
     font-size: 1rem;

@@ -64,8 +64,18 @@
   margin: 5px 0 0 0;
   font-size: 120%;
 }
+.info-link-container {
+  display: flex;
+  justify-content: space-around;
+}
 .info a {
   color: rgb(250, 225, 175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 5px;
   transition: all linear 90ms;
 }
 .info p {
@@ -88,6 +98,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+  }
   .projects-content {
     width: 100%;
     justify-content: space-around;
@@ -100,8 +114,6 @@
 
 @media screen and (max-width: 820px) {
   .projects-container {
-    flex-direction: column;
-    justify-content: center;
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -113,7 +125,7 @@
     width: 100%;
   }
   .card {
-    width: 80%;
-    min-height: 150px;
+    width: 90%;
+    min-height: 180px;
   }
 }

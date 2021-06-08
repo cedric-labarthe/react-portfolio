@@ -49,16 +49,23 @@
   fill: none;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1200px) {
   .contacts-container {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 820px) {
   .contacts-title {
     font-size: 2rem;
   }
   .contacts-content {
     flex-direction: column;
+  }
+  .contacts-content svg {
+    height: 20vw;
+    width: 20vw;
   }
   .social {
     height: 20vh;
