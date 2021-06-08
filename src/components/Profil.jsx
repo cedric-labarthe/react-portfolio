@@ -18,11 +18,27 @@ const Profil = ({ scrollPos }) => {
       className="profil-container"
       id="profil"
       style={{
-        backgroundImage: 'url(/black-bg.jpg)',
-        backgroundSize: 'auto 120%',
-        backgroundPositionY: `${scrollPos * 0.8}px`,
+        position: 'relative',
+        top: `${scrollPos * -0.09}px`,
+        transition: 'all 200ms linear',
       }}
     >
+      <div>
+        <img
+          style={{
+            position: 'fixed',
+            width: '100vw',
+            height: '120%',
+            left: '0',
+            zIndex: -5,
+            top: `${scrollPos * 0.1 - window.innerHeight * 0.15}px`,
+            filter: 'blur(4px)  contrast(120%)',
+            transition: 'all 200ms linear',
+          }}
+          src="/black3-min.png"
+          alt="bg-parallax"
+        />
+      </div>
       <Header />
       <Fade left>
         <div className="profil-content">

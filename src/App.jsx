@@ -44,7 +44,7 @@ function App() {
           <DotRing />
           <Profil scrollPos={scrollPos} />
           <Skills />
-          <Projects scrollPos={scrollPos} />
+          <Projects />
           <Contacts />
         </>
       ) : null}

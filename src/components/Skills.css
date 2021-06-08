@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  /* background-image: url(../assets/images/white-bg-min.jpg); */
+  background-size: cover;
   min-height: 100vh;
   padding: 0 2%;
 }
@@ -11,7 +13,6 @@
 .skills-title {
   font-size: 5rem;
   color: grey;
-  text-decoration: underline;
 }
 
 .skills-content {

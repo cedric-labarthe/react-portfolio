@@ -1,6 +1,5 @@
 // Import modules
 import { Fade } from 'react-reveal';
-import PropTypes from 'prop-types';
 
 // Import medias
 import spaceHack from '../assets/images/spacehack.png';
@@ -15,14 +14,15 @@ import './Projects.css';
 
 // TODO Make reel living projects links and litle descriptions with translateY block
 
-const Projects = ({ scrollPos }) => (
+const Projects = () => (
   <section
     className="projects-container"
     id="projects"
     style={{
-      backgroundImage: 'url(/black-bg.jpg)',
-      backgroundSize: 'auto 120%',
-      backgroundPositionY: `${scrollPos - window.innerHeight * 0.8}px`,
+      backgroundImage: 'url(/black-bg2-min.jpg)',
+      backgroundPosition: 'center center',
+      backgroundSize: 'cover',
+      backdropFilter: 'blur(5px)',
     }}
   >
     <Fade right>
@@ -183,9 +183,5 @@ const Projects = ({ scrollPos }) => (
     </Fade>
   </section>
 );
-
-Projects.propTypes = {
-  scrollPos: PropTypes.number.isRequired,
-};
 
 export default Projects;

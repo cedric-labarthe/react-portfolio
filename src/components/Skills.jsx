@@ -7,14 +7,7 @@ import './Skills.css';
 // TODO Add Sass SCRUM?
 
 const Skills = () => (
-  <section
-    className="skills-container"
-    id="skills"
-    style={{
-      backgroundImage: 'url(/white-bg.jpg)',
-      backgroundSize: 'cover',
-    }}
-  >
+  <section className="skills-container" id="skills">
     <Fade left>
       <h2 className="skills-title">Compétences</h2>
     </Fade>

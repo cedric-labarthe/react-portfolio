@@ -9,7 +9,7 @@ const Contacts = () => (
     className="contacts-container"
     id="contacts"
     style={{
-      backgroundImage: 'url(/white-bg.jpg)',
+      backgroundImage: 'url(/white-bg-min.jpg)',
       backgroundSize: 'cover',
     }}
   >

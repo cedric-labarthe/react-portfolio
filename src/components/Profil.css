@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: black;
   min-height: 100vh;
   padding: 0 2%;
 }
