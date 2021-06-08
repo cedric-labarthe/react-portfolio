@@ -7,8 +7,8 @@ import './App.css';
 // Import components
 import Profil from './components/Profil';
 import Navbar from './components/Navbar';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
 import Contacts from './components/Contacts';
 
 function App() {

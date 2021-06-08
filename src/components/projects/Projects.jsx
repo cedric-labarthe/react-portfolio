@@ -2,12 +2,12 @@
 import { Fade } from 'react-reveal';
 
 // Import medias
-import spaceHack from '../assets/images/game/spacehack.png';
-import biclooApp from '../assets/images/bicloo/bicloo-map.png';
-import fourSpi from '../assets/images/4spi/4spi-hom.png';
-import blackJack from '../assets/images/game/blackjack.png';
-import sept from '../assets/images/game/sept.png';
-import portfolio from '../assets/images/portfolio.png';
+import spaceHack from '../../assets/images/game/spacehack.png';
+import biclooApp from '../../assets/images/bicloo/bicloo-map.png';
+import fourSpi from '../../assets/images/4spi/4spi-hom.png';
+import blackJack from '../../assets/images/game/blackjack.png';
+import sept from '../../assets/images/game/sept.png';
+import portfolio from '../../assets/images/portfolio.png';
 
 // Import styles
 import './Projects.css';

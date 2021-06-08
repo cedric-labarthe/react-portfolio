@@ -5,9 +5,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 2%;
-  background-image: url(../assets/images/bg/black-bg2-min2-min.jpg);
+  background-image: url(../../assets/images/bg/black-bg2-min2-min.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -25,10 +25,14 @@
 }
 
 .card {
+  z-index: 50;
   position: relative;
   width: 30%;
+  height: auto;
   margin: 1% 1%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgb(250, 225, 175);
   box-shadow: 2px 2px 20px 5px black;
   transition: border-radius linear 130ms, transform linear 220ms;
@@ -58,6 +62,7 @@
 .info h2 {
   text-decoration: underline;
   margin: 5px 0 0 0;
+  font-size: 120%;
 }
 .info a {
   color: rgb(250, 225, 175);
@@ -66,6 +71,7 @@
 .info p {
   text-decoration: none;
   padding: 0 5px;
+  font-size: 80%;
 }
 .info a:hover {
   color: rgb(250, 225, 175);
@@ -81,11 +87,24 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
+  .projects-content {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .card {
+    width: 40%;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
   .projects-container {
     flex-direction: column;
-    height: fit-content;
     justify-content: center;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .projects-title {
     font-size: 2rem;
@@ -95,11 +114,6 @@
   }
   .card {
     width: 80%;
-    height: 30vh;
-    margin: 30px 0;
-  }
-  .card img {
-    width: 100%;
-    height: auto;
+    min-height: 150px;
   }
 }

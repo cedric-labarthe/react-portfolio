@@ -8,19 +8,23 @@
   justify-content: space-around;
   width: 100%;
   padding: 10px 0;
+  background-image: url(../assets/images/bg/nav-bg.jpg);
+  background-size: cover;
 }
 
 .navbar-container {
-  font-size: 2em;
+  font-size: 100%;
   z-index: 50;
   background-color: white;
   box-shadow: 0px 2px 20px black;
+  transform: translateY(0);
   transition: all linear 430ms;
 }
 
 .navbar-container-hidden {
   opacity: 0;
   z-index: -10;
+  transform: translateY(-100%);
   transition: all linear 400ms;
 }
 
@@ -41,11 +45,10 @@
   background-color: black;
   color: white;
   transform: scale(1.02);
-  text-decoration: none;
   text-shadow: 0 0 2px gray;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   .navbar-container {
     font-size: 0.8em;
   }

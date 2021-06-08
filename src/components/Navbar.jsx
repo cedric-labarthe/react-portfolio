@@ -7,13 +7,7 @@ import { MemoryRouter as Router } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = ({ scrollTop }) => (
-  <div
-    className={scrollTop ? 'navbar-container' : 'navbar-container-hidden'}
-    style={{
-      backgroundImage: 'url(/nav-bg.jpg)',
-      backgroundSize: 'cover',
-    }}
-  >
+  <div className={scrollTop ? 'navbar-container' : 'navbar-container-hidden'}>
     <Router history="/">
       <HashLink smooth to="/pathLink#profil">
         Profil

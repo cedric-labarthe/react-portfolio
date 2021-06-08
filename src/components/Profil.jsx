@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 // Import styles
 import Header from './Header';
 
+// Import medias
+import codeBg from '../assets/images/bg/black3-min.png';
+
 // Import components
 import './Profil.css';
 
@@ -36,7 +39,7 @@ const Profil = ({ scrollPos }) => {
             filter: 'blur(4px)  contrast(120%)',
             transition: 'all 200ms linear',
           }}
-          src="/black3-min.png"
+          src={codeBg}
           alt="bg-parallax"
         />
       </div>
