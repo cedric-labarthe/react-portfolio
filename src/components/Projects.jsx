@@ -2,7 +2,7 @@
 import { Fade } from 'react-reveal';
 
 // Import medias
-import spaceHack from '../assets/images/spacehack.png';
+import spaceHack from '../assets/images/game/spacehack.png';
 import biclooApp from '../assets/images/bicloo/bicloo-map.png';
 import fourSpi from '../assets/images/4spi/4spi-hom.png';
 import blackJack from '../assets/images/game/blackjack.png';
@@ -15,16 +15,7 @@ import './Projects.css';
 // TODO Make reel living projects links and litle descriptions with translateY block
 
 const Projects = () => (
-  <section
-    className="projects-container"
-    id="projects"
-    style={{
-      backgroundImage: 'url(/black-bg2-min.jpg)',
-      backgroundPosition: 'center center',
-      backgroundSize: 'cover',
-      backdropFilter: 'blur(5px)',
-    }}
-  >
+  <section className="projects-container" id="projects">
     <Fade right>
       <h2 className="projects-title">Projets</h2>
     </Fade>
@@ -33,6 +24,7 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>Space Hackathon</h2>
+            <p>Hackathon de 24 autour du theme de l&apos;espace</p>
             <a
               href="https://github.com/cedric-labarthe/space-hackathon.git"
               target="_blank"
@@ -58,6 +50,10 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>BiclooApp</h2>
+            <p>
+              Une application de gestion de trajets en vélos en libre service.
+              (projet fictif)
+            </p>
             <a
               href="https://github.com/cedric-labarthe/Bicloo-App.git"
               target="_blank"
@@ -83,6 +79,7 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>4-Spirited-Guys</h2>
+            <p>Site vitrine d&apos;un lieux de détente (projet fictif)</p>
             <a
               href="https://github.com/cedric-labarthe/4-spirited-guys.git"
               target="_blank"
@@ -108,6 +105,7 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>BlackJack</h2>
+            <p>Jeu de BlackJack en HTML/CSS/JS</p>
             <a
               href="https://github.com/cedric-labarthe/blackjack.git"
               target="_blank"
@@ -133,6 +131,7 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>Sept</h2>
+            <p>Jeu de hasard en React</p>
             <a
               href="https://github.com/cedric-labarthe/sept.git"
               target="_blank"
@@ -158,6 +157,7 @@ const Projects = () => (
         <div className="card">
           <div className="info">
             <h2>Portfolio</h2>
+            <p>Projet d&apos;un autre portfolio</p>
             <a
               href="https://cedric-labarthe.github.io/portfolio/"
               target="_blank"

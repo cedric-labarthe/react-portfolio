@@ -11,10 +11,10 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Intro from './components/Into';
-import DotRing from './components/DotRing';
+// import DotRing from './components/DotRing';
 
 function App() {
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(false);
   const [scrollTop, setScrollTop] = useState(true);
   let prevPos = 0;
   const [scrollPos, setScrollPos] = useState(0);
@@ -33,6 +33,7 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -41,7 +42,7 @@ function App() {
       <Navbar scrollTop={scrollTop} />
       {!intro ? (
         <>
-          <DotRing />
+          {/* <DotRing /> */}
           <Profil scrollPos={scrollPos} />
           <Skills />
           <Projects />

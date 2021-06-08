@@ -18,6 +18,7 @@ const Profil = ({ scrollPos }) => {
       className="profil-container"
       id="profil"
       style={{
+        overflowY: 'hidden',
         position: 'relative',
         top: `${scrollPos * -0.09}px`,
         transition: 'all 200ms linear',

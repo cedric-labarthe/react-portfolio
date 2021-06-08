@@ -7,6 +7,9 @@
   background-color: black;
   height: 100vh;
   padding: 0 2%;
+  background-image: url(../assets/images/bg/black-bg2-min2-min.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 .projects-title {
@@ -36,7 +39,6 @@
 }
 
 .info {
-  text-decoration: underline;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,9 +55,17 @@
   border-radius: 20px;
   opacity: 1;
 }
+.info h2 {
+  text-decoration: underline;
+  margin: 5px 0 0 0;
+}
 .info a {
   color: rgb(250, 225, 175);
   transition: all linear 90ms;
+}
+.info p {
+  text-decoration: none;
+  padding: 0 5px;
 }
 .info a:hover {
   color: rgb(250, 225, 175);
